@@ -1,0 +1,391 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+.banner{
+		width: 100%;
+		height: 100vh;
+		background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+		background-size: cover;
+		background-position: center;
+}
+.navbar{
+        width: 85%;
+        margin: auto;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.Profile{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 100px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 10px;
+}
+.Biodata p{
+    text-align: left;
+    position: absolute;
+    color: white;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 0%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    
+}
+button:hover span{
+    height: 100%;
+    width: 100%;
+    
+}
+button:hover{
+    border: none;
+}
+.Gambar{
+    margin-left: 1000px;
+}
+.Rebound{
+    width: 1000;
+    height: 300;
+    margin-left: 140px;
+}
+.News1{
+    width: 600;
+    height: 400;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.banner1{
+		width: 100%;
+		height: 300vh;
+		background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+		background-size: cover;
+		background-position: center;
+}
+.banner2{
+		width: 100%;
+		height: 220vh;
+		background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+		background-size: cover;
+		background-position: center;
+}
+.banner3{
+		width: 100%;
+		height: 130vh;
+		background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+		background-size: cover;
+		background-position: center;
+}
+.News11{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    margin-top: 700px;
+    margin-left: 50px;
+}
+.News1isi{
+    text-align: left;
+    position: absolute;
+    color: white;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.patung{
+    width: 600;
+    height: 400;
+    margin-top: 76px;
+    margin-left: 125px;
+}
+.News2{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    margin-top: 1400px;
+    margin-left: 50px;
+}
+.News2isi{
+    text-align: left;
+    position: absolute;
+    color: white;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.Ijen{
+    width: 600;
+    height: 400;
+    margin-top: 76px;
+    margin-left: 125px
+}
+.gal1 img{
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 20% round;
+}
+.gal1 h2{
+    color: white;
+    position: relative;
+    left:  200;
+    top: 10;
+}
+.gal2 img{
+    width: 400;
+    height: 500;
+    margin-left: 535px;
+    margin-top: -500px;
+    position: relative;
+    top: -55px;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 20% round;
+}
+.gal2 h2{
+    position: relative;
+    color: white;
+    left: 690;
+    top: 30;
+    
+}
+.gal3 img{
+    width: 400;
+    height: 500;
+    margin-left: 1025px;
+    margin-top: -500px;
+    position: relative;
+    top: -80;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 20% round;
+}   
+.gal3 h2{
+    position: relative;
+    color: white;
+    left: 1190;
+    top: 2;
+    
+}
+.Banyuwangi video{
+    width: 950;
+    height: 700;
+    position: relative;
+    bottom: 50;
+    left: 280;
+}
+.musik audio{
+    position: relative;
+    left: 600;
+    bottom: 740;
+}
+.rafa img{
+    width: 300;
+    height: 500;
+    margin-top: 100;
+    margin-left: 50;
+}
+.rafa li{
+    font-size: 20;
+    color: white;
+    margin-left: 60;
+    margin-top: 
+}
+.content1{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    margin-top: -200;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 50px;
+}
+.chandra img{
+    width: 300;
+    height: 500;
+    margin-top: -583;
+    margin-left: 1170;
+}
+.chandra li{
+    font-size: 20;
+    color: white;
+    margin-left: 1185;
+    position: relative;
+    top: -80;
+}
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    height: 50%;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: black;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: black;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transform: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: mediumblue;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn-field button{
+    flex-basis: 48%;
+    position: relative;
+    top: 30px;
+    left: 105px;
+    align-items: center;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    text-align: center;
+}
+.input-group{
+    height: 80px;
+}
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+    
+}
